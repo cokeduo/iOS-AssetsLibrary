@@ -15,6 +15,9 @@
 		448F183C1C979CC4009CC2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448F183A1C979CC4009CC2A0 /* LaunchScreen.storyboard */; };
 		448F18471C979CC5009CC2A0 /* tableViewOfLocalPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F18461C979CC5009CC2A0 /* tableViewOfLocalPhotosTests.m */; };
 		448F18521C979CC5009CC2A0 /* tableViewOfLocalPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F18511C979CC5009CC2A0 /* tableViewOfLocalPhotosUITests.m */; };
+		448F18651C97A8EE009CC2A0 /* PTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F18631C97A8EE009CC2A0 /* PTTableViewCell.m */; };
+		448F18661C97A8EE009CC2A0 /* PTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448F18641C97A8EE009CC2A0 /* PTTableViewCell.xib */; };
+		448F18691C97B106009CC2A0 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F18681C97B106009CC2A0 /* PTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		448F184D1C979CC5009CC2A0 /* tableViewOfLocalPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewOfLocalPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448F18511C979CC5009CC2A0 /* tableViewOfLocalPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableViewOfLocalPhotosUITests.m; sourceTree = "<group>"; };
 		448F18531C979CC5009CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448F18621C97A8EE009CC2A0 /* PTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableViewCell.h; sourceTree = "<group>"; };
+		448F18631C97A8EE009CC2A0 /* PTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTableViewCell.m; sourceTree = "<group>"; };
+		448F18641C97A8EE009CC2A0 /* PTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTTableViewCell.xib; sourceTree = "<group>"; };
+		448F18671C97B106009CC2A0 /* PTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
+		448F18681C97B106009CC2A0 /* PTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				448F18301C979CC4009CC2A0 /* AppDelegate.m */,
 				448F18321C979CC4009CC2A0 /* ViewController.h */,
 				448F18331C979CC4009CC2A0 /* ViewController.m */,
+				448F18671C97B106009CC2A0 /* PTViewController.h */,
+				448F18681C97B106009CC2A0 /* PTViewController.m */,
+				448F18621C97A8EE009CC2A0 /* PTTableViewCell.h */,
+				448F18631C97A8EE009CC2A0 /* PTTableViewCell.m */,
+				448F18641C97A8EE009CC2A0 /* PTTableViewCell.xib */,
 				448F18351C979CC4009CC2A0 /* Main.storyboard */,
 				448F18381C979CC4009CC2A0 /* Assets.xcassets */,
 				448F183A1C979CC4009CC2A0 /* LaunchScreen.storyboard */,
@@ -246,6 +259,7 @@
 				448F183C1C979CC4009CC2A0 /* LaunchScreen.storyboard in Resources */,
 				448F18391C979CC4009CC2A0 /* Assets.xcassets in Resources */,
 				448F18371C979CC4009CC2A0 /* Main.storyboard in Resources */,
+				448F18661C97A8EE009CC2A0 /* PTTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +286,8 @@
 			files = (
 				448F18341C979CC4009CC2A0 /* ViewController.m in Sources */,
 				448F18311C979CC4009CC2A0 /* AppDelegate.m in Sources */,
+				448F18651C97A8EE009CC2A0 /* PTTableViewCell.m in Sources */,
+				448F18691C97B106009CC2A0 /* PTViewController.m in Sources */,
 				448F182E1C979CC4009CC2A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tableViewOfLocalPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibiaoqing.tableViewOfLocalPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tableViewOfLocalPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibiaoqing.tableViewOfLocalPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +514,7 @@
 				448F18581C979CC5009CC2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448F18591C979CC5009CC2A0 /* Build configuration list for PBXNativeTarget "tableViewOfLocalPhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +523,7 @@
 				448F185B1C979CC5009CC2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448F185C1C979CC5009CC2A0 /* Build configuration list for PBXNativeTarget "tableViewOfLocalPhotosUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +532,7 @@
 				448F185E1C979CC5009CC2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
